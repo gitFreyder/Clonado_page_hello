@@ -24,7 +24,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0;
 }
 
 /* ocultar mobile */
@@ -106,19 +106,34 @@ nav .more {
   display: none;
 }
 
+/*header*/
+header {
+  background-image: url(/images/halo-infinite-cover-darkmode.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
 /* creando media query menu */
-@media screen and (max-width: 1202px) {
+@media screen and (max-width: 1260px) {
   nav .link-hide {
     display: none;
   }
   nav .more {
     display: flex;
   }
+
+  /* header img responsy */
+  header {
+    height: 70vh;
+  }
 }
 
 nav .mobile .links {
   display: none;
   flex-direction: column;
+  background-color: black;
 }
 nav .mobile .links a {
   display: block;
@@ -155,5 +170,17 @@ nav .mobile .links a:hover {
 
   nav .mobile {
     display: block;
+  }
+
+  .nav .header {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* bacground size img */
+  header {
+    height: 40vh;
+    /* mover imagen un poco abajo */
+    background-position: center 40px;
   }
 }
