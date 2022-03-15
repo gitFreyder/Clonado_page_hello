@@ -193,6 +193,34 @@ header {
 .green-link:hover::before {
   transform: scaleX(0.7);
 }
+
+/*  videos  */
+
+.w-75 {
+  width: 75%;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 3.3rem;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+#videos h2 {
+  font-size: 3.3rem;
+}
+
+#videos {
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+  background-image: url("/images/bg-videos.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* creando media query menu */
 @media screen and (max-width: 1260px) {
   nav .link-hide {
