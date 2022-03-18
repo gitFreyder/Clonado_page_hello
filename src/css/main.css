@@ -207,6 +207,7 @@ h3 {
   padding-top: 50px;
   color: white;
 }
+
 #videos h2 {
   font-size: 3.3rem;
 }
@@ -219,6 +220,50 @@ h3 {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#controls .prev,
+#controls .next {
+  height: 50px;
+  width: 80px;
+  border: none;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#controls .prev:hover,
+#controls .next:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+#slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*video slider*/
+#videos #slider #current {
+  width: 1280px;
+  margin: 50px auto;
+  /* border: 1px solid #00c3ff; */
+}
+
+/* videos img*/
+#videos #slider #videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: auto;
+}
+
+#videos #slider #videos-container .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /* creando media query menu */
